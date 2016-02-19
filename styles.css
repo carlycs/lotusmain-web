@@ -241,9 +241,12 @@ a:active {
 #social-icon{
 	position:relative;
 	text-align: center ; 
-	width:300px;
+	
 	margin-left:auto;
 	margin-right:auto;
 	 
+	z-index:10042;
+	 
 	}
-
+ 
+ 
