@@ -2,6 +2,9 @@ git config --global user.name "Hoofar"
 git config --global user.email hp@lotustech.io
 git config --global core.editor vim
 git config --list
+
+git config --global push.default matching
+
 user.name=Hoofar
 user.email=hp@lotustech.io
 core.editor=vim
