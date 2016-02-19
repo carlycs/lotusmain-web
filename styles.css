@@ -50,6 +50,11 @@ div {
 	clear:both;
 }
 
+.notop{
+margin:0;
+top:0;
+}
+
 /*============================================*/
 /*=================TOP MENU===================*/
 /*============================================*/
@@ -57,7 +62,7 @@ div {
 	position: fixed;
 	color:red;
 	
-	z-index:10042;
+	z-index:1100;
 	float:left;
 	margin-left: 10em;
 	margin-top:15px;
@@ -70,7 +75,7 @@ div {
 #lotusimg{
 	position:relative;
 	 
-	z-index:10042;
+	z-index:1100;
 	width:40px;
 	height:40px;
 	margin:10px 2px 0px 110px ;
@@ -140,8 +145,41 @@ background-color:black;
  
 	}
 
+/*============================================*/
+/*=================FIRST IMAGE================*/
+/*============================================*/
+.servicediv{
+	position:relative;
+	 z-index:1000;
+	text-align:center;
+	font-weight:bold;
+	width:600px;
+	font-size:200%;
+	top:200px;
 
+}
 
+#serviceswitch{
+	position:relative;
+	z-index:1000;
+	text-align:center;
+	background-color: rgb(250, 36, 25);
+	color:white;
+	width:600px;
+	font-weight:bold;
+
+	font-size:220%;
+	top:200px;
+
+}
+
+#image-panel{
+position:relative;
+z-index:900;
+ 
+ 
+
+}
 /*============================================*/
 /*=================TEAM=======================*/
 /*============================================*/
