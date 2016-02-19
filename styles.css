@@ -237,4 +237,13 @@ a:active {
 	font-weight:bold;
 	padding-top:20px;
 	}
+	
+#social-icon{
+	position:relative;
+	text-align: center ; 
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	 
+	}
 
