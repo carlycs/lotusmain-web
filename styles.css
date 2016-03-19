@@ -68,6 +68,7 @@ color:black;
 }
 
 
+
 /*============================================*/
 /*=================TOP MENU===================*/
 /*============================================*/
@@ -117,7 +118,7 @@ color:black;
 	
 }
 
-#container ul{
+#lw-container ul{
 	float:left;
 	margin-left:150px;
 	margin-right:100px;
@@ -127,7 +128,7 @@ color:black;
 
 }
 
-#container li{
+#lw-container li{
 	list-style:none;
 	float:left;
 	margin: 0px 0px 0px 0px;
@@ -149,7 +150,7 @@ background-color:black;
 }
 
 
-#container{
+#lw-container{
 	position:fixed;
 	background-color: #FFF;
 	width:100%; 
@@ -226,14 +227,31 @@ background-color:gray;
 
 
 .focusbox{
+
+
+height:100%;
+
+}
+
+.focusbox p{
+width:80%;
+padding-left: 0;
+padding-bottom:20px;
 color:black;
-border: solid;
-height:300px;
+
 text-align: justify;
 font-weight:normal;
 letter-spacing:0pt;
 word-spacing:0pt;
 line-height: normal;
+}
+
+.focusbox img {
+height:120px;
+width:80%;
+margin-top:10px;
+margin-bottom:20px;
+
 }
 
 /*============================================*/
@@ -247,9 +265,7 @@ position: static;
 	z-index:1000;
 	border-radius: 90px;
 
-	width:180px ;
-	height: 180px;
-	
+
 	background-color: #000;
 	
 	margin-top:0px;
@@ -261,11 +277,50 @@ position: static;
 	float:none;
 }
 
+.teampanel img {
+	width:180px ;
+	height: 180px;
+	padding-top:10px;
+ 
+}
 .teampanel img:hover {
 	opacity:0.4;
 	filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
+.team-options {
+color:black;
+font-weight:bold;
+text-align:center;
+
+
+}
+
+.team-name {
+
+
+}
+
+.team-title {
+font-size:120%;
+
+}
+
+.team-experience{
+
+}
+
+
+.testimonial-panel {
+ 
+height: 220px;
+background-color:#D6B34A;
+
+text-align:center;
+}
+
+ 
+*/
 /*============================================*/
 /*=================JOIN US====================*/
 /*============================================*/
@@ -284,12 +339,12 @@ a:visited {
 
  
 a:hover {
-    
+    text-decoration: none;
 }
 
  
 a:active {
-  
+  text-decoration: none;
 }
 
 
@@ -297,8 +352,38 @@ a:active {
 	margin:0px;
 	padding:0px;
 	width:100%;
-	
+	height:auto;
 
+}
+
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+
+.client {
+
+position:absolute;
+font-weight:italic;
+font-size:100%;
+color:black;
+bottom:0;
+right:0;
 }
 
 /*============================================*/
@@ -316,7 +401,12 @@ a:active {
 /*=================FOOTER====================*/
 /*============================================*/
 
+footer {
+padding:0;
+margin:0;
 
+
+}
 
 #footer-panel{
 	position:relative;
@@ -324,6 +414,7 @@ a:active {
 	width:100%; 
 	height:60px;
 	margin:0px;
+	bottom:0;
  
 	}
 #copyright{
@@ -335,13 +426,20 @@ a:active {
 	
 #social-icon{
 	position:relative;
-	text-align: center ; 
-	
-	margin-left:auto;
-	margin-right:auto;
-	 
+	float:left;
 	z-index:10042;
 	 
 	}
+	
+#social-box {
+height:30px;
+width:220px;
+position: relative;
+margin-top:-60px;
+margin-left:auto;
+margin-right:auto;
+background-color: #f9f9f9;
+
+}
  
  
