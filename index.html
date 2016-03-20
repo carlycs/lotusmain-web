@@ -16,6 +16,7 @@
 	
 	<!-- css !-->
 	<link rel="stylesheet" type="text/css" href="assets/css/styles-3-3-6.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	
 	<!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  
@@ -140,6 +141,18 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 <!--==================================== -->
 <!--=============SECTION================ -->
 <!--============First View============== -->
+<script src="typed.js"></script>
+<script>
+  $(function(){
+	  $("#servicesswitch").typed({
+		strings: ["DESIGN & CONSULTING",
+		"DESIGN & PROTOTYPING",
+		"DESIGN & SEO SETUP"],
+		typeSpeed: 100
+	  });
+  });
+</script>
+
 
 <div class="clear"></div> <!-- clear flow-->
 
@@ -147,7 +160,7 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 
 	<div class="servicediv">ON-DEMAND </div>
 
-	<div id="servicesswitch">DESIGN &amp; CONSULTING<br></div>
+	<div id="servicesswitch"><br></div>
 
 	<div class="servicediv"> SERVICES </div>
  
@@ -169,10 +182,20 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 	
 	<div class="row focusbox ">
 	  <div class="col-md-4 ">
-		  <img />
+		  
+		  <div class="img-convas">
+		  <i class="fa fa-cog fa-5x fa-spin"></i>
+		  <i class="fa fa-cog fa-3x fa-spin" id="secondgear"></i>
+		  <i class="fa fa-cog fa-4x fa-spin" id="thirdgear"></i>
+		  
+		  
+		   </div>
 		  <p> We focus on Data Mining and Parallel Computing Technologies. That includes Parallel R, Python scripting and Networking.</p>
 	  </div>
 	  
+	  
+	
+
 	  <div class="col-md-4 ">
 		  <img />
 		  	<p>Data Visualization and parallel Scientific Computing is a bit narrow for State College! We also do small projects on a flat fee basis. 
@@ -180,8 +203,43 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 </p>
 	  </div>
 	  
-	  <div class="col-md-4 ">
-		  	<img />
+	  
+	  
+	  <script>
+	  $(function() {
+    var $elie = $("#img3"), degree = 0, timer;
+    $("#imgfadein").hide();
+    $("#img3").fadeOut(6000);
+    $("#imgfadein").fadeIn(6000);
+    
+    rotate();
+    function rotate() {
+        
+        $elie.css({ WebkitTransform: 'rotate(' + degree + 'deg)'});  
+        $elie.css({ '-moz-transform': 'rotate(' + degree + 'deg)'});                      
+        timer = setTimeout(function() {
+            ++degree;
+            rotate();
+            
+             
+            
+        },200);
+        
+    }
+    
+    $("input").toggle(function() {
+        clearTimeout(timer);
+    }, function() {
+        rotate();
+    });
+});
+</script>
+
+		<div class="col-md-4 ">
+		  <img id="img3" src="img/lotus12.JPG" />
+		  <img id="imgfadein" src="img/lotus12.JPG" />
+		</div>
+		  	
 		  	<p>Design and Developement of Local brands. If you are in State College, from Photoshoot to logo-design to Web launch and CRM we like to help you.
 		  	 If it's in Happy Valley we want to be a part of it!  
 	</p>	

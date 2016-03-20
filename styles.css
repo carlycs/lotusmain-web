@@ -234,6 +234,7 @@ height:100%;
 }
 
 .focusbox p{
+
 width:80%;
 padding-left: 0;
 padding-bottom:20px;
@@ -253,6 +254,57 @@ margin-top:10px;
 margin-bottom:20px;
 
 }
+
+.img-convas {
+height:120px;
+width:80%;
+margin-top:10px;
+margin-bottom:20px;
+text-align:center;
+
+}
+
+#img3{
+width:90px;
+height:90px;
+border-radius:45px;
+
+
+}
+
+#imgfadein{
+position:absolute;
+top:0;
+width:90px;
+height:90px;
+border-radius:45px;
+ 
+}
+
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
 
 /*============================================*/
 /*=================TEAM=======================*/
