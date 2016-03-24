@@ -27,10 +27,7 @@
 	
 	<link rel="stylesheet" type="text/css" href="styles.css" />
 	
-	<!-- React setup !-->
-	 <script src="build/react.js"></script>
-    <script src="build/react-dom.js"></script>
-	<script type="text/babel" src="src/helloreact.js"></script>
+	
 	<!-- SEO -->
 	<script type="application/ld+json">
 {
@@ -85,9 +82,13 @@ http://ogp.me/ns/article#">
 <meta name="twitter:site" content="hoofar.pourzand"> <!-- TBD-->
 <meta name="twitter:title" content="Lotus Industries and Consulting Group">
 <meta name="twitter:description" content="Web Design and Developement. System Adminstrator services. Consulting services."> <!-- TBD-->
-<meta name="twitter:creator" content="hoofar.pourzand">
+<meta name="twitter:creator" content="@hoofar.pourzand">
 <!-- Twitter Summary card images must be at least 120x120px -->
 <meta name="twitter:image" content="https://lotustech.io/img/lotus-web-consulting.jpg" /> <!-- TBD-->
+
+ 
+    
+    
 </head>
 
 <body>
@@ -147,9 +148,11 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 <script>
   $(function(){
 	  $("#servicesswitch").typed({
-		strings: ["DESIGN & CONSULTING",
-		"DESIGN & PROTOTYPING",
-		"DESIGN & SEO SETUP"],
+		strings: [
+		"PROTOTYPING",
+		"SEO SETUP",
+		"TESTING",
+		"CONSULTING"],
 		typeSpeed: 100
 	  });
   });
@@ -157,16 +160,18 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 
 
 <div class="clear"></div> <!-- clear flow-->
+<div class="container">
 
-<div id="textbox"> 
+	<div id="textbox"> 
+	 
+		<div class="servicediv">ON-DEMAND </div>
 
-	<div class="servicediv">ON-DEMAND </div>
+		<div id="servicesswitch">DESIGN &amp; <br></div>
 
-	<div id="servicesswitch"><br></div>
+		<div class="servicediv"> SERVICES </div>
+	 
 
-	<div class="servicediv"> SERVICES </div>
- 
-
+	</div>
 </div>
 
 
@@ -183,7 +188,7 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 	<span class="badge"> First 30 minute Project Review is Free.</span>
 	
 	<div class="row focusbox ">
-	  <div class="col-md-4 ">
+	  <div class="col-sm-4 ">
 		  
 		  <div class="img-convas">
 		  <i class="fa fa-cog fa-5x fa-spin"></i>
@@ -198,8 +203,10 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 	  
 	
 
-	  <div class="col-md-4 ">
-		  <img />
+	  <div class="col-sm-4">
+		  <div class="img-convas">
+			  <i class="fa fa-cog fa-5x "></i>
+			   </div>
 		  	<p>Data Visualization and parallel Scientific Computing is a bit narrow for State College! We also do small projects on a flat fee basis. 
 		  	Python and R are our favorites. We also accept projects in C, Database Prototyping and few Engineering scripting languages like Matlab.
 </p>
@@ -222,13 +229,11 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
         timer = setTimeout(function() {
             ++degree;
             rotate();
-            
-             
-            
+ 
         },200);
         
     }
-    
+ 
     $("input").toggle(function() {
         clearTimeout(timer);
     }, function() {
@@ -237,9 +242,15 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 });
 </script>
 
-		<div class="col-md-4 ">
+<!--
+		
 		  <img id="img3" src="img/lotus12.JPG" />
 		  <img id="imgfadein" src="img/lotus12.JPG" />
+		</div>
+-->
+		<div class="col-sm-4 ">
+		<div class="img-convas"> 
+			<i class="fa fa-cog fa-5x "></i>
 		</div>
 		  	
 		  	<p>Design and Developement of Local brands. If you are in State College, from Photoshoot to logo-design to Web launch and CRM we like to help you.
@@ -255,7 +266,7 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 
 
 
-<!-- We have 100+ happy customers in last few years. You can check what they're saying about us.   -->
+<!-- We have 10+ happy customers in last few years. You can check what they're saying about us.   -->
 
 
 <!-- powered by us  -->
@@ -341,17 +352,17 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 		<form method="POST">
 			<div class="form-group">
 				<div class="input-group input-group-md">
-						<span class="input-group-addon">
+					<!-- <span class="input-group-addon">
 							<span class="glyphicon glyphicon-user"> </span>
-					</span>
+					</span> -->
 				<input type="text"  class="form-control" placeholder="Name"  name="nameinput" />
 				 
 				</div>
 				 
 				<div class="input-group input-group-md">
-				<span class="input-group-addon">
+				<!-- <span class="input-group-addon">
 					<span class="glyphicon glyphicon-envelope"></span>
-				</span>
+				</span> -->
 				<input type="email"  class="form-control" placeholder="Your PSU email..." name="emailinput" />
 				</div>
 				
@@ -399,7 +410,7 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
 					<h5>Particle Swarm Optimization Project, Matlab</h5>
 					<blockquote><p>When we run the code [PSO, after your modification and optimization], the code finds the solution in the mid-air and grabs it like 
 											the movie [Martian] when they rescued Matt Damon in the Martian. </p> </blockquote>
-											<span class="client"> Saad Shaker </span>
+											<div class="client"> Saad M Al-Dalimi  </br> Selangor, Malaysia </div>
 				</div>
 			
 		</div>	
@@ -416,73 +427,39 @@ ga('set', 'userId', '118727099'); // Set the user ID using signed-in user_id.
  
 	<h5> You have a project that you like us to have a look at? </h5>
 
-	<img id="map-contact"
-	src="img/state-college-map-lotus.png"
-	 />
+	<img id="map-contact"  class="img-responsive"
+	src="img/state-college-map-lotus.png"/>
 
-<h3>
-Email us or Call us! We'll get back to you in a day!
-</h3>
+	<h3>
+	Email us or Call us! We'll get back to you in a day!
+	</h3>
+	
 	 
-		<form method="POST">
-			<div class="form-group">
-				<input type="text"  class="form-control" placeholder="Name"  name="nameinput"/>
-				<input type="email"  class="form-control" placeholder="Your PSU email..." name="emailinput" />
-				<br />		
-				<textarea name="textarea"  name="mailbody" class="form-control" placeholder="Anything flies! Just say it..."></textarea>
-				<br /> <br />
-				I'm a <select>
-					<option> Freshman</option>
-					<option value="1">Junior </option>
-					<option value="2">Others </option> 
-				</select>
-				<select>
-					<option> Engineering PSU Student</option>
-					<option value="1">Design Major </option>
-					<option value="2">Mathematics Major </option>
-					<option value="3">Others</option>
-				</select>
-
-				
-				
-			<input type="submit" value="Send" class="btn btn-success btn-lg />
-			</div>
-		</form>
+	 
 
 	 
 
 </div>
  
-<!--==================================== -->
-<!--=============SECTION================ -->
-<!--==================================== -->
-<!--
-<table>
-<tr><th>Zone </th> <th>Servicing Aptartmens </th> <th>Delivery Fee</th></tr>
 
-<tr><td>zone 0</td><td>Waupelani Drive</td><td>$4.99</td></tr>
-<tr><td>zone 1</td><td>Downtown Area</td><td>$2.99</td></tr>
-<tr><td>zone 2</td><td>College Court</td><td>$3.99</td></tr>
-<tr><td>zone 3</td><td>Vairo Boulvard</td><td>$5.99</td></tr>
-
-
-
-
-</table>
--->
 <div class="clear"></div>
 
 
-<footer>
+<footer class="footer">
 
-<div id="footer-panel">
+
+
+<div class="container">
+	 <div class="row">
+	 
+				<div id="footer-panel">
 	 
 
 		<div id="copyright">
 		&copy; 2013-2016 | State College | Phone: (814) 237-0074
 		</div>
 		
-		<div id="social-box">
+		<!-- <div id="social-box">
 							
 				<div id="social-icon"  > 
 					
@@ -500,11 +477,20 @@ Email us or Call us! We'll get back to you in a day!
 
 				</div>
 		</div>
-	 
+	  -->
 
+		</div>
+	 </div>
 </div>
+ 
+
 </footer>
 
+
+<!-- React setup !-->
+	<script src="build/react.js"></script>
+    <script src="build/react-dom.js"></script>
+	<script type="text/babel" src="src/helloreact.js"></script>
 </body>
 
 </html>

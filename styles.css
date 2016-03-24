@@ -207,7 +207,7 @@ padding:0px;
 
 #textbox{
 	position:relative;
-	width:992px;
+	width:100%;
 	margin:0 ;
 	padding:0;
 	
@@ -365,7 +365,7 @@ font-size:120%;
 
 .testimonial-panel {
  
-height: 220px;
+height: 100%;
 background-color:#D6B34A;
 
 text-align:center;
@@ -412,9 +412,10 @@ a:active {
 blockquote {
   background: #f9f9f9;
   border-left: 10px solid #ccc;
-  margin: 1.5em 10px;
+  margin: 1.5em 10px 3.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C""\201D""\2018""\2019";
+    
 }
 blockquote:before {
   color: #ccc;
@@ -426,6 +427,7 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+ 
 }
 
 .client {
@@ -436,6 +438,7 @@ font-size:100%;
 color:black;
 bottom:0;
 right:0;
+padding-bottom:5px;
 }
 
 /*============================================*/
@@ -454,16 +457,16 @@ right:0;
 /*============================================*/
 
 footer {
-padding:0;
+ 
 margin:0;
-
+padding-top: 60px;
 
 }
 
 #footer-panel{
 	position:relative;
 	background-color: #000;
-	width:100%; 
+	 
 	height:60px;
 	margin:0px;
 	bottom:0;
@@ -480,12 +483,14 @@ margin:0;
 	position:relative;
 	float:left;
 	z-index:10042;
+	text-align:center;
+	 
 	 
 	}
 	
 #social-box {
 height:30px;
-width:220px;
+width:200px;
 position: relative;
 margin-top:-60px;
 margin-left:auto;
